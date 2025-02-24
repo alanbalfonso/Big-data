@@ -50,7 +50,17 @@ def main():
     #tarifas maximas por año
     maxTarifa_2016 = tarifaMaxima(df_2016)
     maxTarifa_2017 = tarifaMaxima(df_2017)
+
+    #Escribir en un archivo de texto los resultados
+    with open('resultados.txt', 'w') as f:
+        f.write(f"Promedio del costo a la tarifa correspondiente a los anios 2016 y 2017: {promedio_anios:.2f}\n")
+        f.write(f"Promedio del costo de la tarifa de 2016: {promedio_2016:.2f}\n")
+        f.write(f"Promedio del costo de la tarifa de 2017: {promedio_2017:.2f}\n")
+        f.write(f"Variacion del precio de gas a lo largo de los anios: {variacion:.2f}%\n")
+        f.write(f"Tarifa maxima 2016: {maxTarifa_2016:.2f}\n")
+        f.write(f"Tarifa maxima 2017: {maxTarifa_2017:.2f}\n")
     
+    # Imprimir en la consola los resultados
     print(f"Promedio del costo a la tarifa correspondiente a los años 2016 y 2017: {promedio_anios:.2f}")
     print(f"Promedio del costo de la tarifa de 2016: {promedio_2016:.2f}")
     print(f"Promedio del costo de la tarifa de 2017: {promedio_2017:.2f}")
