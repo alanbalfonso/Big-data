@@ -60,6 +60,5 @@ def main():
 
 # TODO: Guardar la informacion que se esta imprimiendo en un archivo .txt
 
-
 if __name__ == "__main__":
     main()
