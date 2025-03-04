@@ -30,7 +30,7 @@ def tarifaMaxima(df):
 #! Metodo main
 def main():
     #lectura de la ruta del archivo y carga de los datos del .csv
-    rutaArchivo = "Tarifas por zonas 2016-2017.csv"
+    rutaArchivo = "./Fuentes/INPCMensualAnualizadoHasta2024.csv"
     df = cargaDatos(rutaArchivo)
     
     #filtros por año y conversion de dataframe a un año solamente
